@@ -1,0 +1,24 @@
+#box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: all 0.3s ease-in;
+}
+.fancy {
+  border-radius: 25%;
+  background: red;
+  background: redial-gradient(circle, red, orange, yellow);
+  /* rotate: 23deg; */
+  scale: 1.5;
+  translate: 300px;
+  animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360%;
+  }
+}
