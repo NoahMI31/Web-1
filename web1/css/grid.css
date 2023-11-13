@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  grid-template-columns: repeat(3, 1fr);
+
+  /* grid-column-gap: 30px;
+    grid-row-gap: 30px; */
+
+  gap: 20px;
+}
+.grid-item {
+  background-color: bisque;
+  width: 100%;
+  height: 200px;
+}
+
+.fancy {
+  background-color: blueviolet;
+  background: #009aff;
+  background: radial-gradient(
+    circle farthest-corner at right center,
+    #009aff 0%,
+    #ff9300 80%
+  );
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 1.49);
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+.picture {
+  background: green
+    url("https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 50px;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+}

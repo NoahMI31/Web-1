@@ -1,0 +1,43 @@
+<scipt></script> ---> How to have js in html
+
+alert(); ---> Have notifications
+alert("Hello world :)");
+
+console.log('Hello world as well :)'); --> more commenly used
+
+variables
+
+//const specialNumber = 7; ---> Constant//
+
+//let otherNumber = 9; ---> Dynamic variable //
+
+//var oldNumber = 10; ---> old school//
+
+//specialNumber + otherNumber;//
+
+console.log(specialNumber (+ / - *) otherNumber);
+
+
+//let result = --> this while show results of calculations//
+
+let result = specialNumber (+ / - *) otherNumber;
+console.log(result) --> only shows in console
+
+const myNumbersDiv = document.getElementById("numbers");
+//myNumbersDiv.innerHTML = result; ---> "<b>" + results + </b>"; /Bold///
+myNumbersDiv.innerHTML = 'result: <i>${result}<i>'; --> '' brings together
+
+<hr> --> underline the intire screen
+
+const myNumbersDiv.style.backgroundColor = "yellow";
+
+step 1
+const myExercise = document.getElementById("exercise");
+
+step 2
+myExercise.innerhtml = '<img src='https...>;
+
+step 3
+myExercise.style.rotate = "30deg"; --> can create css in javascript
+
+
